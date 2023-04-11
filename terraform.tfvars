@@ -1,2 +1,2 @@
-project_id = "round-bounty-363611"
+project_id = "luiz-devops-cicd"
 region     = "europe-west2"
