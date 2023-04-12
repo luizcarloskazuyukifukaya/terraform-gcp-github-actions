@@ -20,3 +20,27 @@ Press enter.
 press : again
 type wq!
 ```
+
+## Steps to add secrets on the repository
+1. Go to the repository top and select "settings"
+2. On the left bar, select ""Secrets and variables"
+3. Click "Actions"
+4. Select "New repository secret"
+5. "Actions secrets / New secret" appears
+6. Input "Name" (Secret Name) and "Secret" (Value)
+7. Select "Add secret"
+
+(NOTE) The Secret Name defined can be used in the workflow as ${{
+secrets.[Secret Name] }}
+
+The workflow step should like this:
+```
+  - name: Terraform Init
+    run: terraform init
+    env:
+      GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+```
+
+(NOTE) The Secret Name is defined as "GOOGLE_CREDENTIALS" for the above example
+in the repository settings.
+
