@@ -1,2 +1,4 @@
+# Project variables
+#
 project_id = "luiz-devops-cicd"
-region     = "europe-west2"
+region     = "us-central1"
