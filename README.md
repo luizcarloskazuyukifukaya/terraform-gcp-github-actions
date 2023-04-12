@@ -12,15 +12,6 @@ For example, ${{ secrets.GOOGLE_CREDENTIALS }} is the expression in the workflow
 
 The [blog](https://medium.com/@vikramshinde/automating-terraform-deployment-to-google-cloud-with-github-actions-17516c4fb2e5) explain how you can extract the JSON multi-line to a single line so you can copy that value to define the secrets value directly on GitHub.com repository settings.
 
-```shell
-vi SA_key.json
-press :
-%s;\n; ;g
-Press enter.
-press : again
-type wq!
-```
-
 (UPDATE 2023/4/12) Just opening the JSON file with VSCode and copying the
 content should be enought when pasting the secret value for the
 GOOGLE_CREDENTIAL.
