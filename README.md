@@ -21,6 +21,10 @@ press : again
 type wq!
 ```
 
+(UPDATE 2023/4/12) Just opening the JSON file with VSCode and copying the
+content should be enought when pasting the secret value for the
+GOOGLE_CREDENTIAL.
+
 ## Steps to add secrets on the repository
 1. Go to the repository top and select "settings"
 2. On the left bar, select ""Secrets and variables"
